@@ -1,0 +1,113 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Apr 27 03:10:40 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45128 (port auto-assigned) fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x55bbc42e45f0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55bbc42e45f0 pid: 335 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 335)
+spawned uWSGI worker 1 (pid: 338, cores: 1)
+spawned uWSGI http 1 (pid: 339)
+subprocess 336 exited with code 0
+[pid: 338|app: 0|req: 1/1] 172.17.0.1 () {54 vars in 3272 bytes} [Wed Apr 27 03:10:48 2022] GET / => generated 2277 bytes in 87 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 339)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Apr 27 03:21:12 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x55f7b6e61280
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55f7b6e61280 pid: 506 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 506)
+spawned uWSGI worker 1 (pid: 509, cores: 1)
+subprocess 507 exited with code 0
+[pid: 509|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 3341 bytes} [Wed Apr 27 03:21:17 2022] GET / => generated 2277 bytes in 71 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (64bit) on [Wed Apr 27 03:21:28 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x55fb33fc7190
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x55fb33fc7190 pid: 581 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 581)
+spawned uWSGI worker 1 (pid: 584, cores: 1)
+subprocess 582 exited with code 0
+[pid: 584|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 3372 bytes} [Wed Apr 27 03:21:32 2022] GET /?t=1651029692181 => generated 2277 bytes in 41 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
