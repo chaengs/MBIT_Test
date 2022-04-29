@@ -13,7 +13,7 @@
 <body>
     <section id="survey">
         <div class="wrapper">
-            <form action="/result/" method="post" id="form">
+            <form action="/submit/" method="post" id="form">
                 {% csrf_token %}
                 <!-- csrf 공격 방어용 -->
                 {% for question in questions %}
