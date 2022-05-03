@@ -1,16 +1,11 @@
+{% extends 'main/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 개발 유형 찾기</title>
+{% block head %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type=text/css href="{% static 'css/style.css' %}">
-</head>
-<body>
+{% endblock head %}
+{% block body %}
     <secion id="main_contents">
         <div class="wrapper">
             <div class="title">
@@ -51,5 +46,4 @@
             </div>
         </div>
     </secion>
-</body>
-</html>
+{% endblock body %}

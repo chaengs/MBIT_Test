@@ -125,3 +125,46 @@ subprocess 1429 exited with code 0
 [pid: 1431|app: 0|req: 9/9] 172.17.0.1 () {60 vars in 3225 bytes} [Fri Apr 29 14:21:38 2022] GET /result/5 => generated 5206 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
 [pid: 1431|app: 0|req: 10/10] 172.17.0.1 () {58 vars in 3197 bytes} [Fri Apr 29 14:21:39 2022] GET /result/5 => generated 5206 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
 [pid: 1431|app: 0|req: 11/11] 172.17.0.1 () {58 vars in 3181 bytes} [Fri Apr 29 14:21:42 2022] GET / => generated 2277 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 1431)...
+...gracefully killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /workspace/mbittest
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/workspace/mbittest/tmp/MBIT.sock)
+running /workspace/mbittest/myvenv/bin/uwsgi
+[uWSGI] getting INI configuration from /workspace/mbittest/.config/uwsgi/uwsgi.ini
+[uwsgi-static] added mapping for /static => /workspace/mbittest/staticfiles/
+*** Starting uWSGI 2.0.20 (64bit) on [Fri Apr 29 15:08:41 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x556d0016a110
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0x556d0016a110 pid: 1428 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+gracefully (RE)spawned uWSGI master process (pid: 1428)
+spawned uWSGI worker 1 (pid: 1639, cores: 1)
+subprocess 1505 exited with code 0
