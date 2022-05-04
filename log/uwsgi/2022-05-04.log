@@ -1,0 +1,197 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Wed May  4 14:42:17 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x5567796dc190
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x5567796dc190 pid: 1030 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1030)
+spawned uWSGI worker 1 (pid: 1037, cores: 1)
+subprocess 1035 exited with code 0
+[pid: 1037|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 3397 bytes} [Wed May  4 14:42:19 2022] GET /?t=1651675338980 => generated 2228 bytes in 285 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1037|app: 0|req: 2/2] 172.17.0.1 () {54 vars in 3282 bytes} [Wed May  4 14:42:20 2022] GET /favicon.ico => generated 2809 bytes in 21 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 3/3] 172.17.0.1 () {58 vars in 3406 bytes} [Wed May  4 14:43:24 2022] GET /form/ => generated 33835 bytes in 236 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 4/4] 172.17.0.1 () {66 vars in 3597 bytes} [Wed May  4 14:43:45 2022] POST /submit/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 5/5] 172.17.0.1 () {60 vars in 3432 bytes} [Wed May  4 14:43:45 2022] GET /result/2 => generated 7558 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 6/6] 172.17.0.1 () {66 vars in 3597 bytes} [Wed May  4 14:44:17 2022] POST /submit/ => generated 0 bytes in 45 msecs (HTTP/1.1 302) 6 headers in 188 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 7/7] 172.17.0.1 () {60 vars in 3432 bytes} [Wed May  4 14:44:17 2022] GET /result/5 => generated 7615 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 8/8] 172.17.0.1 () {58 vars in 3388 bytes} [Wed May  4 14:44:26 2022] GET / => generated 2228 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 9/9] 172.17.0.1 () {60 vars in 3419 bytes} [Wed May  4 14:45:43 2022] GET / => generated 2228 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 10/10] 172.17.0.1 () {60 vars in 3432 bytes} [Wed May  4 14:45:47 2022] GET /result/5 => generated 7615 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 11/11] 172.17.0.1 () {60 vars in 3431 bytes} [Wed May  4 14:47:10 2022] GET /result/5 => generated 7657 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 12/12] 172.17.0.1 () {60 vars in 3431 bytes} [Wed May  4 14:47:28 2022] GET /result/5 => generated 8145 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 13/13] 172.17.0.1 () {56 vars in 3330 bytes} [Wed May  4 14:59:00 2022] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 14/14] 172.17.0.1 () {56 vars in 3332 bytes} [Wed May  4 14:59:00 2022] GET /admin/ => generated 0 bytes in 105 msecs (HTTP/1.1 302) 9 headers in 331 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 15/15] 172.17.0.1 () {56 vars in 3369 bytes} [Wed May  4 14:59:00 2022] GET /admin/login/?next=/admin/ => generated 2214 bytes in 66 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 16/16] 172.17.0.1 () {66 vars in 3651 bytes} [Wed May  4 14:59:11 2022] POST /admin/login/?next=/admin/ => generated 0 bytes in 625 msecs (HTTP/1.1 302) 11 headers in 625 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 17/17] 172.17.0.1 () {60 vars in 3491 bytes} [Wed May  4 14:59:12 2022] GET /admin/ => generated 7537 bytes in 49 msecs (HTTP/1.1 200) 8 headers in 293 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 18/18] 172.17.0.1 () {58 vars in 3471 bytes} [Wed May  4 14:59:18 2022] GET /admin/main/developer/ => generated 7584 bytes in 156 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 19/19] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:18 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 20/20] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:20 2022] GET /admin/main/developer/4/change/ => generated 9320 bytes in 189 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 21/21] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:21 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 22/22] 172.17.0.1 () {66 vars in 3713 bytes} [Wed May  4 14:59:29 2022] POST /admin/main/developer/4/change/ => generated 0 bytes in 98 msecs (HTTP/1.1 302) 10 headers in 610 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 23/23] 172.17.0.1 () {60 vars in 3764 bytes} [Wed May  4 14:59:29 2022] GET /admin/main/developer/ => generated 7794 bytes in 130 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 24/24] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:29 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 25/25] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:31 2022] GET /admin/main/developer/4/change/ => generated 9320 bytes in 116 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 26/26] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:31 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 27/27] 172.17.0.1 () {56 vars in 3470 bytes} [Wed May  4 14:59:32 2022] GET /admin/main/developer/ => generated 7584 bytes in 129 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 28/28] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:34 2022] GET /admin/main/developer/2/change/ => generated 10227 bytes in 136 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 29/29] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:34 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 30/30] 172.17.0.1 () {66 vars in 3713 bytes} [Wed May  4 14:59:36 2022] POST /admin/main/developer/2/change/ => generated 0 bytes in 94 msecs (HTTP/1.1 302) 10 headers in 634 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 31/31] 172.17.0.1 () {60 vars in 3788 bytes} [Wed May  4 14:59:36 2022] GET /admin/main/developer/ => generated 7807 bytes in 154 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 32/32] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:36 2022] GET /admin/jsi18n/ => generated 3195 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 33/33] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:37 2022] GET /admin/main/developer/1/change/ => generated 10314 bytes in 127 msecs (HTTP/1.1 200) 9 headers in 462 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 34/34] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:38 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 35/35] 172.17.0.1 () {66 vars in 3713 bytes} [Wed May  4 14:59:39 2022] POST /admin/main/developer/1/change/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 10 headers in 625 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 36/36] 172.17.0.1 () {60 vars in 3779 bytes} [Wed May  4 14:59:40 2022] GET /admin/main/developer/ => generated 7801 bytes in 203 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 37/37] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:40 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 38/38] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:41 2022] GET /admin/main/developer/3/change/ => generated 9980 bytes in 195 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 39/39] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:41 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 40/40] 172.17.0.1 () {66 vars in 3713 bytes} [Wed May  4 14:59:43 2022] POST /admin/main/developer/3/change/ => generated 0 bytes in 91 msecs (HTTP/1.1 302) 10 headers in 645 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 41/41] 172.17.0.1 () {60 vars in 3799 bytes} [Wed May  4 14:59:43 2022] GET /admin/main/developer/ => generated 7814 bytes in 138 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 42/42] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:43 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 43/43] 172.17.0.1 () {58 vars in 3504 bytes} [Wed May  4 14:59:45 2022] GET /admin/main/developer/5/change/ => generated 9624 bytes in 135 msecs (HTTP/1.1 200) 9 headers in 461 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 44/44] 172.17.0.1 () {54 vars in 3284 bytes} [Wed May  4 14:59:45 2022] GET /admin/jsi18n/ => generated 3195 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 45/45] 172.17.0.1 () {66 vars in 3713 bytes} [Wed May  4 14:59:47 2022] POST /admin/main/developer/5/change/ => generated 0 bytes in 57 msecs (HTTP/1.1 302) 10 headers in 614 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 46/46] 172.17.0.1 () {60 vars in 3768 bytes} [Wed May  4 14:59:47 2022] GET /admin/main/developer/ => generated 7795 bytes in 150 msecs (HTTP/1.1 200) 10 headers in 559 bytes (1 switches on core 0)
+[pid: 1037|app: 0|req: 47/47] 172.17.0.1 () {54 vars in 3275 bytes} [Wed May  4 14:59:47 2022] GET /admin/jsi18n/ => generated 3195 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 189 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed May  4 15:05:28 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x555ce96b2190
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x555ce96b2190 pid: 1744 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1744)
+spawned uWSGI worker 1 (pid: 1747, cores: 1)
+subprocess 1745 exited with code 0
+[pid: 1747|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 3455 bytes} [Wed May  4 15:05:45 2022] GET /?t=1651676744852 => generated 2225 bytes in 199 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 3463 bytes} [Wed May  4 15:05:47 2022] GET /form/ => generated 33835 bytes in 203 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+Not Found: /all_results.html
+[pid: 1747|app: 0|req: 3/3] 172.17.0.1 () {56 vars in 3410 bytes} [Wed May  4 15:05:55 2022] GET /all_results.html => generated 3003 bytes in 13 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 4/4] 172.17.0.1 () {56 vars in 3400 bytes} [Wed May  4 15:06:09 2022] GET /all_results => generated 0 bytes in 1 msecs (HTTP/1.1 301) 5 headers in 181 bytes (1 switches on core 0)
+Internal Server Error: /all_results/
+Traceback (most recent call last):
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: all_results() missing 1 required positional argument: 'developer_id'
+[pid: 1747|app: 0|req: 5/5] 172.17.0.1 () {56 vars in 3402 bytes} [Wed May  4 15:06:09 2022] GET /all_results/ => generated 59073 bytes in 53 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+Internal Server Error: /all_results/
+Traceback (most recent call last):
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: all_results() missing 1 required positional argument: 'developer_id'
+[pid: 1747|app: 0|req: 6/6] 172.17.0.1 () {58 vars in 3387 bytes} [Wed May  4 15:06:48 2022] GET /all_results/ => generated 58870 bytes in 47 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+Internal Server Error: /all_results/
+Traceback (most recent call last):
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/mbittest/myvenv/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: all_results() missing 1 required positional argument: 'developer_id'
+[pid: 1747|app: 0|req: 7/7] 172.17.0.1 () {58 vars in 3387 bytes} [Wed May  4 15:06:50 2022] GET /all_results/ => generated 58870 bytes in 107 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /workspace/mbittest/tmp/MBIT.sock removed.
+*** Starting uWSGI 2.0.20 (64bit) on [Wed May  4 15:07:00 2022] ***
+compiled with version: 7.5.0 on 22 April 2022 13:27:19
+os: Linux-4.4.0-1128-aws #142-Ubuntu SMP Fri Apr 16 12:42:33 UTC 2021
+nodename: goorm
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /workspace/mbittest
+writing pidfile to /workspace/mbittest/tmp/MBIT.pid
+detected binary path: /workspace/mbittest/myvenv/bin/uwsgi
+chdir() to /workspace/mbittest/
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /workspace/mbittest/tmp/MBIT.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.4 (default, Nov  4 2020, 10:17:35)  [GCC 7.4.0]
+PEP 405 virtualenv detected: /workspace/mbittest/myvenv/
+Set PythonHome to /workspace/mbittest/myvenv/
+Python main interpreter initialized at 0x560b515d8190
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560b515d8190 pid: 1807 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+spawned uWSGI master process (pid: 1807)
+spawned uWSGI worker 1 (pid: 1810, cores: 1)
+subprocess 1808 exited with code 0
+[pid: 1810|app: 0|req: 1/1] 172.17.0.1 () {58 vars in 3387 bytes} [Wed May  4 15:07:05 2022] GET /all_results/ => generated 1555 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+Not Found: /result/1/
+[pid: 1810|app: 0|req: 2/2] 172.17.0.1 () {58 vars in 3421 bytes} [Wed May  4 15:07:09 2022] GET /result/1/ => generated 2982 bytes in 9 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /result/1/
+[pid: 1810|app: 0|req: 3/3] 172.17.0.1 () {60 vars in 3452 bytes} [Wed May  4 15:07:31 2022] GET /result/1/ => generated 2982 bytes in 7 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+Not Found: /result/2/
+[pid: 1810|app: 0|req: 4/4] 172.17.0.1 () {58 vars in 3421 bytes} [Wed May  4 15:07:33 2022] GET /result/2/ => generated 2982 bytes in 6 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[pid: 1810|app: 0|req: 5/5] 172.17.0.1 () {58 vars in 3387 bytes} [Wed May  4 15:08:13 2022] GET /all_results/ => generated 1550 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)

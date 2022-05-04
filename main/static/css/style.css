@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -8,25 +8,25 @@
 @font-face {
     font-family: "NEXON Lv1 Gothic OTF";
     src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff")
-    format("woff");
+      format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    25%{
+    25% {
         transform: translateY(-20%);
     }
-    50%{
+    50% {
         transform: translateY(-40%);
     }
-    75%{
+    75% {
         transform: translateY(-60%);
     }
-    100%{
+    100% {
         transform: translateY(-80%);
     }
 }
@@ -51,6 +51,7 @@ body {
     height: 100%;
     margin-top: 100px;
 }
+
 #main_contents .wrapper {
     display: flex;
     flex-direction: column;
@@ -81,7 +82,7 @@ body {
     padding-bottom: 40px;
 }
 
-.intro h1 {
+.intro_title h1 {
     font-size: 30px;
     padding-bottom: 15px;
 }
@@ -97,12 +98,12 @@ body {
     animation: rotate 7s infinite;
 }
 
-.button {
+.buttons {
     text-align: center;
     padding-bottom: 50px;
 }
 
-.button button {
+.buttons button {
     width: 300px;
     height: 50px;
     padding: 5px;
@@ -111,13 +112,13 @@ body {
     font-family: "NEXON Lv1 Gothic OTF";
     font-size: 20px;
     font-weight: bold;
-    background-color: #FFF;
-    color: #7F47DD;
     cursor: pointer;
+    background-color: #fff;
+    color: #7F47DD;
     margin-bottom: 20px;
 }
 
-.button button:hover {
+.buttons button:hover {
     text-decoration: underline;
 }
 
@@ -139,12 +140,12 @@ body {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    padding: 20px 0 30px;
+    padding: 20px 0 30px; 
 }
 
 .result_data li {
-    font-size: 15px;
     padding-bottom: 20px;
+    font-size: 15px;
 }
 
 .weniv {
@@ -157,7 +158,166 @@ body {
     width: 100px;
 }
 
-.weniv img {
+.weniv img{
     width: 100%;
     height: auto;
+}
+
+@media all and (min-width: 279px) and (max-width: 359px) {
+    #main_contents{
+        margin-top: 50px;
+    }
+    
+    #main_contents .wrapper {
+        max-width: 300px;
+    }
+    
+    .title {
+        padding-bottom: 40px;
+    }
+
+    .main_title {
+        font-size: 35px;
+    }
+    
+    .sub_title {
+        font-size: 15px;
+    }
+
+    .intro {
+        padding-bottom: 20px;
+    }
+    
+    .intro_title h1 {
+        font-size: 20px;
+    }
+    
+    .type {
+        font-size: 17px;
+    }
+    
+    .buttons {
+        padding-bottom: 20px;
+    }
+    
+    .buttons button {
+        font-size: 17px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .result_data .data_wrap {
+        margin-bottom: 30px;
+        width: 170px;
+    }
+
+    .result_data h3 {
+        font-size: 17px;
+    }
+    
+    .result_data li {
+        font-size: 15px;
+    }
+
+    .weniv a {
+        width: 70px;
+    }
+}
+
+@media all and (min-width: 360px) and (max-width: 600px) {
+    #main_contents{
+        margin-top: 50px;
+    }
+    
+    #main_contents .wrapper {
+        max-width: 350px;
+    }
+    
+    .title {
+        padding-bottom: 40px;
+    }
+
+    .main_title {
+        font-size: 40px;
+    }
+    
+    .sub_title {
+        font-size: 17px;
+    }
+
+    .intro {
+        padding-bottom: 20px;
+    }
+    
+    .intro_title h1 {
+        font-size: 20px;
+    }
+    
+    .type {
+        font-size: 17px;
+    }
+    
+    .buttons {
+        padding-bottom: 20px;
+    }
+    
+    .buttons button{
+        font-size: 20px;
+        width: 250px;
+        height: 50px;
+    }
+
+    .result_data .data_wrap {
+        margin-bottom: 30px;
+        width: 220px;
+    }
+
+    .result_data h3 {
+        font-size: 20px;
+    }
+    
+    .result_data li {
+        font-size: 17px;
+    }
+
+    .weniv a {
+        width: 90px;
+    }
+}
+
+@media all and (min-width: 1920px) and (max-width: 2560px) {
+    #main_contents .wrapper {
+        max-width: 700px;
+    }
+    
+    .main_title {
+        font-size: 70px;
+        padding-bottom: 20px;
+    }
+    
+    .sub_title {
+        font-size: 30px;
+    }
+
+    .buttons button{
+        font-size: 30px;
+        width: 350px;
+        height: 60px;
+    }
+    
+    .result_data .data_wrap {
+        width: 320px;
+    }
+    
+    .result_data h3 {
+        font-size: 30px;
+    }
+    
+    .result_data li {
+        font-size: 20px;
+    }
+    
+    .weniv a {
+        width: 150px;
+    }
 }

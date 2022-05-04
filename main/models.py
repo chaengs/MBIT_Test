@@ -3,6 +3,7 @@ from django.db import models
 class Developer(models.Model):
     name = models.CharField(max_length=50)
     count = models.IntegerField(default=0)
+    data = models.JSONField()
     
     #매직 메소드 : 클래스를 대표하는 문자열을 지정
     def __str__(self) :
