@@ -10,7 +10,6 @@
     <title>나의 개발 유형 찾기</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 {% endblock head %}
 {% block body %}
     <section id="main_contents">
@@ -135,5 +134,7 @@
     </section>
 {% endblock body %}
 {% block js %}
-    <script type="text/javascript" src="{% static 'js/result.js' %}"></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script async type="text/javascript" src="{% static 'js/result.js' %}"></script>
 {% endblock js %}

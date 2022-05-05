@@ -1,5 +1,46 @@
 const copyBtn = document.querySelector('.copy_btn');
-const facebookShare = document.querySelector('.facebok_share');
+const facebookShare = document.querySelector('.facebook_share');
+const kakaoShare = document.querySelector('.kakao_share');
+Kakao.init('d676253c350f7e9acfa0281f5302a691');
+// Kakao.isInitialized();
+
+function sendLink() {
+    let result_url = window.location.href;
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '나의 개발 유형은?',
+        description: '나에게 꼭 맞는 개발 유형을 알아보자!!',
+        imageUrl:
+          'https://mbittest-tbxvc.run.goorm.io/static/img/mbit_thumbnail.png',
+        link: {
+          mobileWebUrl: 'https://mbittest-tbxvc.run.goorm.io',
+          webUrl: 'https://mbittest-tbxvc.run.goorm.io',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '결과 보러가기',
+          link: {
+            webUrl: result_url,
+            mobileWebUrl: result_url,
+          },
+        },
+        {
+          title: '테스트 하러 가기',
+          link: {
+            webUrl: 'https://mbittest-tbxvc.run.goorm.io',
+            mobileWebUrl: 'https://mbittest-tbxvc.run.goorm.io/',
+          },
+        },
+      ]
+    });
+}
 
 $(function() {
     let url = window.location.href;
@@ -31,3 +72,4 @@ function sharefacebook() {
 
 copyBtn.addEventListener('click', copyUrl)
 facebookShare.addEventListener('click', sharefacebook)
+kakaoShare.addEventListener('click', sendLink); 
